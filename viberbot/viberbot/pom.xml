@@ -57,6 +57,17 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- nekohtml added for LEGACY HTML5 in application properties -->
+		
+		<dependency>
+   			<groupId>net.sourceforge.nekohtml</groupId>
+   			<artifactId>nekohtml</artifactId>
+   			<version>1.9.21</version>
+		</dependency>
+		
+		
+		
 	</dependencies>
 
 	<build>
