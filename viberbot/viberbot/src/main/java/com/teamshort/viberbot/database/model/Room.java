@@ -11,32 +11,24 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "rooms")
-public class Room  implements Serializable {
- 
+public class Room implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -3417491703612106630L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	
-	
 	@Column(name = "id")
 	private long id;
+	
 	
 	@Column(name = "number")
 	private String number;
  
 	@Column(name = "name")
 	private String name;
- 
-	protected Room() {
-		
-	}
 	
-	public Room(long id, String number, String name) {
-		this.id = id;
+	protected Room() {}
+
+	public Room(String number, String name) {
+		super();
 		this.number = number;
 		this.name = name;
 	}
